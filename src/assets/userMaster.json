@@ -1,0 +1,23 @@
+[
+    {
+      "userId"           :    "123456",
+      "userName"         :    "Abhishek",
+      "password"         :    "987456",
+      "userType"         :    "admin",
+      "employeeNo"         :    "456"
+    },
+    {
+      "userId"           :    "123457",
+      "userName"         :    "Samiran",
+      "password"         :    "9874565",
+      "userType"         :    "manager",
+      "employeeNo"         :    "458"
+    },
+    {
+      "userId"           :    "123458",
+      "userName"         :    "AmarSinh",
+      "password"         :    "9874569",
+      "userType"         :    "admin",
+      "employeeNo"         :    "459"
+    }
+  ]

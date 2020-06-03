@@ -1,0 +1,31 @@
+
+  <div class="container-fluid row" style="margin-top: 40px;">
+    <div class="col">
+      <form [formGroup] = "requestForm" (ngSubmit)="addForm()" style="padding: 15px; background-color:rgb(198, 233, 158); border-radius: 15px; padding-top: 15px;">
+        <div class="form-group">
+          <label for="assetname">Asset</label>
+          <input formControlName= "assetName" type="text" class="form-control" id="assetname"  placeholder="Enter Asset Name">
+        </div>
+        <div class="form-group">
+          <label for="releasedate">Release Date</label>
+          <input formControlName="releaseDate" type="date" class="form-control" id="releasedate" placeholder="Enter Release Date">
+        </div>
+        
+        <button (click)="addForm()" style="margin-bottom: 20px; margin-left: 165px; margin-top: 10px;" type="submit" class="btn btn-primary">Submit</button>
+        <div>Your Request Id is: {{id}}</div>
+      </form>
+    </div>
+    <div class="col">
+      <form [formGroup] = "statusForm" (ngSubmit)="checkStatus()" style="padding: 15px; background-color:rgb(198, 233, 158); border-radius: 15px; padding-top: 15px;">
+        <h3 style="color:red">Check Status</h3>  
+        <div class="form-group">
+            <label for="requestid">Requset Id</label>
+            <input formControlName= "requestId" type="text" class="form-control" id="requestid"  placeholder="Enter Request Id">
+          </div>
+          <small style="color: red; font-size: 15px; padding-top: 0px;" *ngIf="invalid">Invalid Request Id</small><br>
+          <button style="margin-bottom: 20px; margin-left: 165px; margin-top: 10px;" type="submit" class="btn btn-primary">Submit</button>
+          <div *ngIf="valid">Status : {{status}}</div>
+        </form>
+    </div>
+  </div>
+

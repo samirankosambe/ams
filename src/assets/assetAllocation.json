@@ -1,0 +1,23 @@
+[
+    {
+      "allocationId"      :     "xyz1",
+      "assetId"           :     "ABC1",
+      "empNo"             :     "123",
+      "allocationDate"    :     "25/04/2020",
+      "releaseDate"       :     "24/05/2020"
+    },
+    {
+      "allocationId"      :     "xyz2",
+      "assetId"           :     "ABC2",
+      "empNo"             :     "124",
+      "allocationDate"    :     "25/04/2020",
+      "releaseDate"       :     "24/03/2020"
+    },
+    {
+      "allocationId"      :     "xyz3",
+      "assetId"           :     "ABC3",
+      "empNo"             :     "125",
+      "allocationDate"    :     "25/01/2020",
+      "releaseDate"       :     "28/07/2020"
+    }
+  ]

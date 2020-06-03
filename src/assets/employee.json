@@ -1,0 +1,26 @@
+[
+    {
+      "empNo"            :   "456",
+      "empName"          :   "Abhishek",
+      "job"              :   "Analyst",
+      "managerId"        :   "Rakesh",
+      "hireDate"         :   "24/03/2020",
+      "deptId"           :   "KLM2"     
+    },
+    {
+      "empNo"            :   "458",
+      "empName"          :   "Samiran",
+      "job"              :   "Consultant",
+      "managerId"        :   "Rakesh",
+      "hireDate"         :   "24/03/2020",
+      "deptId"           :   "KLM3"     
+    },
+    {
+      "empNo"            :   "459",
+      "empName"          :   "AmarSinh",
+      "job"              :   "Senior Analyst",
+      "managerId"        :   "Rakesh",
+      "hireDate"         :   "24/03/2020",
+      "deptId"           :   "KLM1"     
+    }
+]

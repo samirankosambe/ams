@@ -1,0 +1,37 @@
+[
+    {
+      "assetId"           :        "ABC1",
+      "assetName"         :        "Monitor",
+      "assetDes"          :        "Company: Lenovo 10, Screen: 47cms",
+      "quantity"          :        "1",
+      "status"            :        "Available"
+    },
+    {
+      "assetId"           :        "ABC2",
+      "assetName"         :        "Mouse",
+      "assetDes"          :        "Company: Dell",
+      "quantity"          :        "2",
+      "status"            :        "Available"
+    },
+    {
+      "assetId"           :        "ABC3",
+      "assetName"         :        "Printer",
+      "assetDes"          :        "Company: HP Black Color",
+      "quantity"          :        "3",
+      "status"            :        "Available"
+    },
+    {
+      "assetId"           :        "ABC4",
+      "assetName"         :        "Laptop",
+      "assetDes"          :        "Company: Lenovo",
+      "quantity"          :        "1",
+      "status"            :        "Available"
+    },
+    {
+      "assetId"           :        "ABC5",
+      "assetName"         :        "Keyboard",
+      "assetDes"          :        "Company: Dell",
+      "quantity"          :        "2",
+      "status"            :        "Available"
+    }
+  ]

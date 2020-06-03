@@ -1,0 +1,77 @@
+<div>
+    <h4>Requests</h4>
+    <table border="1" class="container-fluid">
+        <tr>
+            <th>Request Id</th>
+            <th>Employee Id</th>
+            <th>Manager</th>
+            <th>Asset Name</th>
+            <th>Release date</th>
+            <th>Status</th>
+            <th colspan="2" s>Action</th>
+        </tr>
+        <tr *ngFor = "let request of requests; let i =index">
+            <td>{{request.requestId}}</td>
+            <td>{{request.empId}}</td>
+            <td>{{request.managerId}}</td>
+            <td>{{request.assetName}}</td>
+            <td>{{request.releaseDate}}</td>
+            <td>{{request.status}}</td>
+            <td><button (click) = "approve(i)"> Approve</button></td>
+            <td><button (click) = "reject(i)">Reject</button></td>
+        </tr>
+    </table>    <br>
+</div>
+<div class="container-fluid row">
+    <div class="col">
+        <button (click)="displayAssets()">Assets</button>
+        <table border="1" class="container-fluid" *ngIf = "showAsset">
+            <tr>
+                <th>Asset Id</th>
+                <th>Asset Name</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+            <tr *ngFor = "let asset of assets">
+                <td>{{asset.assetId}}</td>
+                <td>{{asset.assetName}}</td>
+                <td>{{asset.assetDes}}</td>
+                <td>{{asset.quantity}}</td>
+                <td>{{asset.status}}</td>
+            </tr>
+        </table>    <br>
+    </div>
+    <div class="col">
+        <button (click) = "addAsset()">Add Asset</button>
+        <div >
+            <form *ngIf = "showForm" [formGroup]="addForm" class="container-fuild" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="assetid">Asset Id</label>
+                <input type="text" formControlName="assetId" class="form-control" id="assetid" placeholder="Enter Asset Id"/>
+              </div>
+              <div class="form-group">
+                <label for="assetname">Asset Name</label>
+                <input type="text" formControlName="assetName" class="form-control" id="assetname" placeholder="Enter Asset Name"/>
+              </div>
+              <div class="form-group">
+                <label for="assetdesc">Description</label>
+                <input type="text" formControlName="assetDes" class="form-control" id="assetdesc" placeholder="Enter Description"/>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="text" formControlName="quantity" class="form-control" id="quantity" placeholder="Enter Quantity"/>
+              </div>
+              <div class="form-group">
+                <label for="status">Status</label>
+                <select name="status" id="status" formControlName="status" class="form-control">
+                    <option value="available">Available</option>
+                    <option value="unavailable">Unavailable</option>
+                </select>
+              </div>
+              <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+          </div>
+    </div>
+</div>
+

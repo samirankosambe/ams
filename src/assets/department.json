@@ -1,0 +1,18 @@
+[
+    {
+      "deptId"            :  "KLM1",
+      "depName"           :  "HR"
+    },
+    {
+      "deptId"            :  "KLM2",
+      "depName"           :  "L&D"
+    },
+    {
+      "deptId"            :  "KLM3",
+      "depName"           :  "HR"
+    },
+    {
+      "deptId"            :  "KLM4",
+      "depName"           :  "L&D"
+    }
+]

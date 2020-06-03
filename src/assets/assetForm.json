@@ -1,0 +1,26 @@
+[
+    {
+      "empId"             :   "456",
+      "managerId"         :   "Rakesh",
+      "assetName"         :   "Mouse",
+      "requestId"         :   "456Rakesh",
+      "releaseDate"       :   "25/06/2020",
+      "status"            :   "Pending"
+    },
+    {
+      "empId"             :   "457",
+      "managerId"         :   "Rakesh",
+      "assetName"         :   "Keyboard",
+      "requestId"         :   "457Rakesh",
+      "releaseDate"       :   "25/05/2020",
+      "status"            :   "Pending"
+    },
+    {
+      "empId"             :   "458",
+      "managerId"         :   "Rakesh",
+      "assetName"         :   "Laptop",
+      "requestId"         :   "458Rakesh",
+      "releaseDate"       :   "20/04/2020",
+      "status"            :   "Pending"
+    }
+  ]
